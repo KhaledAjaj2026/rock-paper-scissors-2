@@ -73,6 +73,10 @@ button:active {
     width: auto;
 }
 
+#decisions-container {
+    font-size: 1.7rem;
+}
+
 .scores {
     display: flex;
     justify-content: center;
