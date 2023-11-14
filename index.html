@@ -15,10 +15,9 @@
 
 <body>
     <nav>
-        <a href="">RPS2!</a>
-        <a href="" class="color-scheme">
-            <!-- insert SVG of sun && moon symbol -->
-        </a>
+        <p class="nav-title">RPS2!</p>
+        <button type="button" class="color-scheme">a button idk
+        </button>
     </nav>
     <main>
         <h1>Rock-Paper-Scissors <span class="header_num-two">2!</span></h1>
@@ -37,24 +36,35 @@
             <h2 class="prompt">Select Game-mode to Begin</h2>
             <button class="one-player-mode" type="button" onclick="">One Player</button>
             <button class="two-player-mode" type="button" onclick="">Two Players</button>
-            <div class="options">
-                <button class="rock" onclick="">
-                    <img src="./img/rockM.png" alt="rock">
-                </button>
-                <button class="paper" onclick="">
-                    <img src="./img/paperM.png" alt="paper">
-                </button>
-                <button class="scissors" onclick="">
-                    <img src="./img/scissorsM.png" alt="scissors">
-                </button>
+            <div class="weapons-container">
+                <div class="weapon">
+                    <button class="rock" onclick="">
+                        <img src="./assets/img/rockM.png" alt="rock">
+                    </button>
+                    <i>Rock</i>
+                </div>
+                <div class="weapon">
+                    <button class="paper" onclick="">
+                        <img src="./assets/img/paperM.png" alt="paper">
+                    </button>
+                    <i>Paper</i>
+                </div>
+                <div class="weapon">
+                    <button class="scissors" onclick="">
+                        <img src="./assets/img/scissorsM.png" alt="scissors">
+                    </button>
+                    <i>Scissors</i>
+                </div>
             </div>
             <p class="decisions"></p>
             <!-- 
                 If 1-Player, score-1 === "Your Score"       && score-2 === "Opponent's Score"
                 If 2-Player, score-1 === "Player 1's Score" && score-2 === "Player 2's Score"
              -->
-            <h3 class="score-1">Score: <span>0</span></h3>
-            <h3 class="score-2">Score: <span>0</span></h3>
+            <div class="scores">
+                <h3 class="score-1">Score: <span>0</span></h3>
+                <h3 class="score-2">Score: <span>0</span></h3>
+            </div>
         </div>
     </main>
 </body>

@@ -1,39 +1,80 @@
-:root {
-    --bg-color: #FBF5F3;
-    --dark-bg-color: #2E2E3A;
-    --font-color: #2E2E3A;
-    --dark-font-color: #FBF5F3;
-}
-
 html, body {
     margin: 0;
+}
+
+body {
+    background-color: #33272a;
+    color: #FBF5F3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+    background-color: #473338;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+}
+
+.color-scheme {
+    height: 1.2rem;
+    width: auto;
 }
 
 main {
     text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: var(--bg-color);
-        color: var(--font-color);
-    }
+h1, button, .nav-title {
+    font-family: Cabin, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-bg-color);
-        color: var(--dark-font-color);
-    }
+h1 {
+    font-size: 3rem;
 }
 
+h2, h3 {
+    font-family: Kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
+.weapons-container {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
+.weapon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+}
+button {
+    cursor: pointer;
+    background-color: #d1a293;
+    background: linear-gradient(45deg, rgb(184,121,121) 15%, rgb(230,185,161) 100%);
+}
 
+button:hover {
+    background: linear-gradient(45deg, rgb(184,121,121) 40%, rgb(230,185,161) 100%);
+}
+
+button:active {
+    background: linear-gradient(45deg, rgb(184,121,121) 55%, rgb(230,185,161) 100%);
+}
 
 /* Options - Rock/Paper/Scissors */
 .rock img, .paper img, .scissors img {
     height: 150px;
     width: auto;
-    cursor: pointer;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
 }
