@@ -1,0 +1,7 @@
+
+/* Options - Rock/Paper/Scissors */
+.rock img, .paper img, .scissors img {
+    height: 150px;
+    width: auto;
+    cursor: pointer;
+}

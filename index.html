@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>RPS2</title>
+</head>
+
+<body>
+    <h1>Rock-Paper-Scissors <span class="header_num-two">2!</span></h1>
+    <main>
+        <div class="container">
+            <!--
+                Prompts:
+                    - Select Game-mode to Begin
+                    One-Player:
+                        - Player: Choose Your Weapon
+                        - You Win/Lose!
+                    Two Players:
+                        - Player 1's Turn
+                        - Player 2's Turn
+                        - Player (1 || 2) Wins!
+            -->
+            <h2 class="prompt">Select Game-mode to Begin</h2>
+            <button class="one-player-mode" type="button" onclick="">One Player</button>
+            <button class="two-player-mode" type="button" onclick="">Two Players</button>
+            <div class="options">
+                <button class="rock" onclick="">
+                    <img src="./img/rockM.png" alt="rock">
+                </button>
+                <button class="paper" onclick="">
+                    <img src="./img/paperM.png" alt="paper">
+                </button>
+                <button class="scissors" onclick="">
+                    <img src="./img/scissorsM.png" alt="scissors">
+                </button>
+            </div>
+            <p class="decisions"></p>
+            <h3 class="score-1">0</h3>
+            <h3 class="score-2">0</h3>
+        </div>
+    </main>
+</body>
+
+</html>
