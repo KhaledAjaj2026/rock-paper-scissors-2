@@ -1,3 +1,35 @@
+:root {
+    --bg-color: #FBF5F3;
+    --dark-bg-color: #2E2E3A;
+    --font-color: #2E2E3A;
+    --dark-font-color: #FBF5F3;
+}
+
+html, body {
+    margin: 0;
+}
+
+main {
+    text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--bg-color);
+        color: var(--font-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-bg-color);
+        color: var(--dark-font-color);
+    }
+}
+
+
+
+
 
 /* Options - Rock/Paper/Scissors */
 .rock img, .paper img, .scissors img {

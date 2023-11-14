@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Kanit:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
     <script src="script.js" defer></script>
     <title>RPS2</title>
 </head>
 
 <body>
-    <h1>Rock-Paper-Scissors <span class="header_num-two">2!</span></h1>
+    <nav>
+        <a href="">RPS2!</a>
+        <a href="" class="color-scheme">
+            <!-- insert SVG of sun && moon symbol -->
+        </a>
+    </nav>
     <main>
+        <h1>Rock-Paper-Scissors <span class="header_num-two">2!</span></h1>
         <div class="container">
             <!--
-                Prompts:
-                    - Select Game-mode to Begin
-                    One-Player:
-                        - Player: Choose Your Weapon
-                        - You Win/Lose!
-                    Two Players:
-                        - Player 1's Turn
-                        - Player 2's Turn
-                        - Player (1 || 2) Wins!
-            -->
+                    Prompts:
+                        - Select Game-mode to Begin
+                        One-Player:
+                            - Player: Choose Your Weapon
+                            - You Win/Lose!
+                        Two Players:
+                            - Player 1's Turn
+                            - Player 2's Turn
+                            - Player (1 || 2) Wins!
+                -->
             <h2 class="prompt">Select Game-mode to Begin</h2>
             <button class="one-player-mode" type="button" onclick="">One Player</button>
             <button class="two-player-mode" type="button" onclick="">Two Players</button>
@@ -39,8 +49,12 @@
                 </button>
             </div>
             <p class="decisions"></p>
-            <h3 class="score-1">0</h3>
-            <h3 class="score-2">0</h3>
+            <!-- 
+                If 1-Player, score-1 === "Your Score"       && score-2 === "Opponent's Score"
+                If 2-Player, score-1 === "Player 1's Score" && score-2 === "Player 2's Score"
+             -->
+            <h3 class="score-1">Score: <span>0</span></h3>
+            <h3 class="score-2">Score: <span>0</span></h3>
         </div>
     </main>
 </body>
