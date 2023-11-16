@@ -18,31 +18,31 @@ const playerChoice = (choice) => {
 	compChoice = weapons[Math.floor(Math.random() * 3)];
 
 	if (userChoice === 'Rock' && compChoice === 'Scissors') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beats ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Win!';
 		userScoreOutput.innerText = ++userScore;
 	} else if (userChoice === 'Paper' && compChoice === 'Rock') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beats ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Win!';
 		userScoreOutput.innerText = ++userScore;
 	} else if (userChoice === 'Scissors' && compChoice === 'Paper') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beats ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Win!';
 		userScoreOutput.innerText = ++userScore;
 	} else if (userChoice === 'Rock' && compChoice === 'Paper') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beat by ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Lose';
 		compScoreOutput.innerText = ++compScore;
 	} else if (userChoice === 'Paper' && compChoice === 'Scissors') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beat by ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Lose';
 		compScoreOutput.innerText = ++compScore;
 	} else if (userChoice === 'Scissors' && compChoice === 'Rock') {
-		decisionDisplay.innerText = `${userChoice} beats ${compChoice}`;
+		decisionDisplay.innerText = `${userChoice}(user) beat by ${compChoice}(comp)`;
 		winLossDisplay.innerText = 'You Lose';
 		compScoreOutput.innerText = ++compScore;
 	} else if (userChoice === compChoice) {
-		decisionDisplay.innerText = `${userChoice} equals ${compChoice}`;
-		winLossDisplay.innerText = "It's a Tie";
+		decisionDisplay.innerText = `${userChoice}(user) equals ${compChoice}(comp)`;
+		winLossDisplay.innerText = "It's a Tie!";
 	}
 };

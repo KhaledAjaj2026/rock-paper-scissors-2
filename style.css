@@ -1,10 +1,8 @@
-html, body {
-    margin: 0;
-}
-
 body {
     background-color: #33272a;
     color: #FBF5F3;
+    width: 100%;
+    margin: 0;
 }
 
 nav {
@@ -44,6 +42,7 @@ h2, h3 {
     margin: 3rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -51,10 +50,11 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 170px;
 }
+
 button {
     cursor: pointer;
+    color: #473338;
     background-color: #d1a293;
     background: linear-gradient(45deg, rgb(184,121,121) 15%, rgb(230,185,161) 100%);
 }
@@ -67,7 +67,6 @@ button:active {
     background: linear-gradient(45deg, rgb(184,121,121) 55%, rgb(230,185,161) 100%);
 }
 
-/* Options - Rock/Paper/Scissors */
 .rock img, .paper img, .scissors img {
     height: 150px;
     width: auto;
@@ -75,10 +74,24 @@ button:active {
 
 #decisions-container {
     font-size: 1.7rem;
+    font-family: Kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .scores {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    font-weight: 900;
+}
+
+#win-or-loss {
+    font-size: 2.5rem;
+    font-family: Cabin, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+    .weapon button img {
+        width: 130px;
+        height: 100%;
+    }
 }
